@@ -1,13 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900');
+@import url("./variables.css");
 
-:root {
-  --green : hsl(75, 94%, 57%);
-  --White: hsl(0, 0%, 100%);
-  --Grey700: hsl(0, 0%, 20%);
-  --Grey800: hsl(0, 0%, 12%);
-  --Grey900: hsl(0, 0%, 8%);
-  --font-size-para: 14px;
-  --font-family: "Inter";
+html {
+	width: 100dvw;
+	height: 100dvh;
 }
 
+body {
+	display: flex;
 
+	width: 100vw;
+	height: 100vh;
+
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--Grey900);
+}
+
+#root {
+	display: flex;
+
+	width: 100vw;
+	height: 100vh;
+
+	justify-content: center;
+	align-items: center;
+
+	background-color: transparent;
+}

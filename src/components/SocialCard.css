@@ -1,0 +1,51 @@
+@import url("../variables.css");
+@import url("../App.css");
+
+.social_links-card {
+    display: flex;
+
+    width: 30%;
+    height: 70%;
+    padding: 40px 60px;
+    border-radius: 30px;
+
+    background-color: var(--Grey800);
+
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_header {
+    display: flex;
+
+    width: 100%;
+    min-width: 50px;
+    height: 30%;
+    min-height: 60px;
+
+    flex-direction: column;
+    gap: 30px;
+
+    & > .header-title_container {
+        display: flex;
+
+        width: 100%;
+        height: fit-content;
+
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    & > .header-profile_photo {
+        
+        aspect-ratio: 1/1;
+        width: 60%;
+        min-width: 30px;
+
+    }
+
+}
+
+
