@@ -10,7 +10,7 @@ const user_profile = {
 	},
 	links: [
 		{ name: "github", url: "" },
-		{ name: "Fronten Mentor", url: "" },
+		{ name: "Frontend Mentor", url: "" },
 		{ name: "LinkedIn", url: "" },
 		{ name: "Twitter", url: "" },
 		{ name: "Instagram", url: "" },

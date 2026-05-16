@@ -8,15 +8,15 @@ const CardHeader = ( { header } ) => {
 				className='card-header header-profile_photo'
 			/>
 			<div className="header-title_container">
-				<h2 className='card-header header-profile_name'>
-					{header.name}
-				</h2>
-				<h3 className=' card-header header-profile_location'>
+				<h1 className='card-header header-profile_name'>
+					{(header.name)}
+				</h1>
+				<h3 className='card-header header-profile_location'>
 					{header.location}
 				</h3>
 			</div>
 				<p className='card-header header-profile_description'>
-					{header.desc}
+					{`"${header.desc}"`}
 				</p>
 		</div>
 	);
@@ -35,7 +35,7 @@ const CardLinks = ( { links } ) => {
 		</li>
 	));
 
-	return <ul className='card-links'>{buttonList}</ul>;
+	return <ul className='card_links'>{buttonList}</ul>;
 };
 
 const SocialCard = ({ header, links }) => {

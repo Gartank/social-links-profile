@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900');
 
 :root {
-	--green: hsl(75, 94%, 57%);
+	--Green: hsl(75, 94%, 57%);
 	--White: hsl(0, 0%, 100%);
 	--Grey700: hsl(0, 0%, 20%);
 	--Grey800: hsl(0, 0%, 12%);
@@ -11,6 +11,8 @@
 }
 
 * {
+	width: fit-content;
+	height:fit-content;
 	box-sizing: border-box;
 	overflow: hidden;
 	margin: 0;
