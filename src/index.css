@@ -1,5 +1,7 @@
 @import url('./variables.css');
 
+/*TODO Hacer los estilos responsive para moviles*/
+
 html {
 	width: 100dvw;
 	height: 100dvh;
