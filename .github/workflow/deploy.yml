@@ -1,0 +1,51 @@
+name: Deploy Vite Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # ⚠️ Asegúrate de que esta sea tu rama principal (puede ser 'master')
+
+# Configura los permisos del GITHUB_TOKEN para permitir el despliegue en GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Permite cancelar despliegues en progreso si se hace un nuevo push seguido
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps: deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          [cite_start]node-version: 20 # Versión de Node compatible con Vite [cite: 73]
+          cache: 'npm'
+
+      - name: Instalar dependencias
+        run: npm ci # Usa 'npm ci' en lugar de 'npm install' para entornos de CI limpios
+
+      - name: Compilar proyecto
+        [cite_start]run: npm run build # Ejecuta Vite para generar la carpeta 'dist' [cite: 9, 38]
+
+      - name: Configurar las páginas de GitHub
+        uses: actions/configure-pages@v4
+
+      - name: Subir el compilado como artefacto
+        uses: actions/upload-pages-artifact@v3
+        with:
+          [cite_start]path: './dist' # Le indicamos a GitHub que suba la carpeta 'dist' generada por Vite [cite: 38, 43]
+
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
