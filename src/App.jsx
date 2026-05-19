@@ -1,6 +1,5 @@
 import SocialCard from "./components/SocialCard/SocialCard.jsx";
-import profileImg from './assets/images/avatar-jessica.jpeg';
-import "./App.css";
+import profileImg from "./assets/images/avatar-jessica.jpeg";
 
 const user_profile = {
 	header: {
@@ -10,11 +9,11 @@ const user_profile = {
 		urlImg: profileImg,
 	},
 	links: [
-		{ name: "github", url: "https://www.github.com" },
-		{ name: "Frontend Mentor", url: "https://www.frontendmentor.io" },
-		{ name: "LinkedIn", url: "https://www.linkedin.com" },
-		{ name: "Twitter", url: "https://www.x.com" },
-		{ name: "Instagram", url: "https://www.instagram.com" },
+		{ key: "github", url: "https://www.github.com" },
+		{ key: "Frontend Mentor", url: "https://www.frontendmentor.io" },
+		{ key: "LinkedIn", url: "https://www.linkedin.com" },
+		{ key: "Twitter", url: "https://www.x.com" },
+		{ key: "Instagram", url: "https://www.instagram.com" },
 	],
 };
 

@@ -1,12 +1,12 @@
 const CardLinks = ({links}) => {
 	const buttonList = links.map((elem) => (
-		<li className='card-links link' key={"link-" + elem.name}>
+		<li className='card-links link' key={"link-" + elem.key}>
 			<a
-				href={"http://" + elem.imgUrl}
+				href={elem.url}
 				target='_self'
 				rel='noopener noreferrer'
 			>
-				{elem.name}
+				{elem.key}
 			</a>
 		</li>
 	));
