@@ -3,9 +3,9 @@
 .social_links-card {
     display: flex;
 
-    width: 24%;
-    height: 67%;
-    padding: 40px 50px;
+    width: 26%;
+    height: 70%;
+    padding: 40px 45px;
     border-radius: 17px;
 
     background-color: var(--Grey800);
@@ -115,7 +115,7 @@
 
 @media (481px < width <=820px) {
     * {
-            font-size: 0.94rem;
+            font-size: 1em;
     }
     .social_links-card {
         width: 55%;
@@ -125,7 +125,7 @@
 
 @media ( width <= 480px) {
     * {
-        font-size: 0.80rem;
+        font-size: 0.92em;
     }
 
     .social_links-card {
@@ -133,7 +133,7 @@
         height: 60%;
     }
     .header-profile_description{
-        font-size: 0.90rem;
+        font-size: 1em;
     }
 
     .card_Links > .links > a {
@@ -143,10 +143,10 @@
 
 @media (width <= 400px ){
     * {
-        font-size: 0.9em;
+        font-size: 0.65rem;
     }
 
-    .header-profile_description {
-        font-size: 0.64rem;
+    .header-profile_description{
+        font-size: 1.3em;
     }
 }
