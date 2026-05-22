@@ -3,8 +3,8 @@
 .social_links-card {
     display: flex;
 
-    width: 30%;
-    height: 70%;
+    width: 24%;
+    height: 67%;
     padding: 40px 50px;
     border-radius: 17px;
 
@@ -52,18 +52,18 @@
 }
 
 .header-profile_name {
-    font-size: 2em;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 
 .header-profile_location {
-    font-size: 1.2em;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--Green);
 }
 
 .header-profile_description {
-    font-size: 1em;
+    font-size: 0.85rem;
 }
 
 .card_links {
@@ -105,6 +105,12 @@
 .card_links>.link>a:hover {
     background-color: var(--Green);
     color: var(--Grey900);
+}
+
+@media (width < 1600px){
+    *{
+        font-size: 0.97em;
+    }
 }
 
 @media (481px < width <=820px) {
